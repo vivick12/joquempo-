@@ -1,0 +1,102 @@
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a{
+    opacity: 0.2;
+    transition: ease-in-out 0.3s;
+}
+
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado {
+     opacity: 1;  
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image:url(fundo.png) ;
+    background-size: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    
+  }
+  @font-face {
+    font-family:'Minecraft';
+    src: url(Minecraft.ttf);
+  }
+  
+  #principal {
+    text-align: center;
+  }
+  
+  #titulo {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Minecraft';
+    color:yellow;
+    font-size: 50px;
+    text-shadow: 4px 4px   black;
+    
+  }
+  
+  #placar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(50, 4, 255, 0.1);
+
+  }
+  
+  #jogador,
+  #computador {
+    flex: 1;
+  }
+  
+  #jogador h2,
+  #computador h2 {
+    margin-top: 0;
+    font-family: 'Minecraft';
+  }
+  
+  #jogadorPontos,
+  #computadorPontos {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  #jogadorEscolha,
+  #computadorEscolha {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  #jogadorEscolha li,
+  #computadorEscolha li {
+    margin: 0 10px;
+  }
+  
+  #jogadorEscolha img,
+  #computadorEscolha img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
+  
+  #mensagem {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  #versus {
+    font-size: 30px;
+    margin: 0 20px;
+    font-family: 'Minecraft';
+    color: red;
+  }
